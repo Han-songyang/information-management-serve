@@ -42,6 +42,7 @@ func InitLog() {
 		log.SetOutput(file)
 	} else {
 		log.Info("failed to log to file.")
+		os.Exit(1)
 	}
 
 	log.SetLevel(logrus.InfoLevel)

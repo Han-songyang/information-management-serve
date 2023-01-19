@@ -7,6 +7,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"os"
 )
 
 var db *gorm.DB
@@ -27,6 +28,7 @@ func InitMysql() {
 			"err": err,
 			"msg": "数据库初始化失败",
 		})
+		os.Exit(1)
 	}
 
 	fmt.Println("mysql init success")

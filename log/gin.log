@@ -1,11 +1,19 @@
-[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
-
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /user/info                --> github.com/han-songyang/information-management-serve/router.InitUserRouter.func1 (3 handlers)
+[GIN-debug] GET    /user/info                --> github.com/han-songyang/information-management-serve/router.InitUserRouter.func1 (2 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :8888
-[GIN] 2023/01/19 - 19:30:03 | 200 |     110.833µs |       127.0.0.1 | GET      "/user/info"
+2023-01-19 08:00:14 - 127.0.0.1 "GET /user/info HTTP/1.1 200 268.5µs "PostmanRuntime/7.30.0" "
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /user/info                --> github.com/han-songyang/information-management-serve/router.InitUserRouter.func1 (2 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8888
+2023-01-19 08:01:56 - 127.0.0.1 "GET /user/info HTTP/1.1 200 548.583µs "PostmanRuntime/7.30.0" "
+2023-01-19 08:02:04 - 127.0.0.1 "GET /user/info HTTP/1.1 200 141.042µs "PostmanRuntime/7.30.0" "
